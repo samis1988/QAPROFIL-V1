@@ -1,0 +1,21 @@
+<ion-header >
+  <ion-navbar color="primary" >
+          
+    <ion-title  face="Cambria" color="white">Indoor Aluminum False Ceilings</ion-title>
+           
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let p of pages" (click)="goToSecond(p.component)">
+      <ion-thumbnail item-start>
+        <img src="{{p.image}}">
+      </ion-thumbnail>
+      <h2><b>{{p.title}}</b></h2>
+       
+      <button ion-button outline item-end>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
